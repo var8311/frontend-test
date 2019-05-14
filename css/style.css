@@ -1,0 +1,267 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Global  css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+.clear{
+  clear: both;
+}
+h4{
+  font-size: 100%;
+  color: #3e3e3e;
+  font-weight: 500;
+  margin: 10px 0 5px;
+  padding: 0 35px;
+}
+h3{
+  color: #6a6a6a;
+  font-weight: 500;
+  font-size: 107%;
+}
+
+
+.wrapper{
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* Carousal slider css start */
+
+.carousal_section .owl-carousel > .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.carousal_section .owl-theme .owl-dots .owl-dot span{
+  background: #9a9697;
+}
+.carousal_section .owl-theme .owl-dots .owl-dot.active span{
+  background: #bfb6a7;
+}
+
+/*Details section css start*/
+.details_section p{
+  font-size: 92%;
+  color: #797979;
+  font-weight: 300;
+  line-height: 35px;
+  padding: 0 35px;
+}
+.size_chart{
+  border-top: #dddedf solid 1px;
+  padding: 8px 0 15px;
+  margin-top: 15px;
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.02);
+  position: relative;
+}
+
+/* About seller section css start */
+.about_selller_sectn{
+  background: #fafafa;
+  padding: 20px 0;
+}
+.seller_sec{
+  display: block;
+  margin-top: 26px;
+}
+.seller_name{
+  margin-top: 8px;
+  display: inline-block;
+}
+.seller_img{
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  margin: 0 25px 0 35px;
+}
+.seller_sec p{
+  font-size: 92%;
+  color: #919191;
+  font-weight: 300;
+  line-height: 35px;
+  margin-top: 2px;
+}
+.seller_sec p > span {
+  color: #5d94bd;
+  font-size: 18px;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+  top: -4px;
+}
+.btn_sectn{
+  display: block;
+  margin-top: 40px;
+  padding: 0 35px;
+}
+.btn_sectn a{
+  font-size: 92%;
+  color: #fff;
+  font-weight: 300;
+  max-width: 44%;
+  width: 100%;
+  text-align: center;
+  height: 72px;
+  border-radius: 50px;
+  background: #5d94bd;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 70px;
+}
+.btn_sectn a:nth-child(2){
+  background: #d56c6c;
+  float: right;
+}
+.message_sectn{
+  border-top: #dddedf solid 1px;
+  padding: 38px 35px 0;
+  margin-top: 35px;
+}
+.user_sectn, .seller_sectn{
+  display: block;
+  text-align: right;
+  margin-bottom: 30px;
+}
+.user_sectn .user_msg{
+  font-style: italic;
+  font-size: 92%;
+  color: #fff;
+  font-weight: 400;
+  background: #bfb6a7;
+  padding: 14px 20px;
+  border-radius: 0 50px 50px 50px;
+  display: inline-block;
+}
+.seller_sectn {
+  text-align: left;
+  max-width: 480px;
+  width: 100%;
+}
+.seller_sectn .seller_msg{
+  font-style: italic;
+  font-size: 92%;
+  color: #6c6c6c;
+  font-weight: 400;
+  background: #fff;
+  padding: 14px 20px;
+  border-radius: 0 50px 50px 50px;
+  display: inline-block;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.05);
+}
+.user_sectn p, .seller_sectn p{
+  font-style: italic;
+  font-weight: 300;
+  color: #6c6c6c;
+  margin: 10px 0;
+  font-size: 70%;
+  text-align: right;
+}
+
+.write_msg{
+  padding: 20px 35px;
+  box-shadow: 0px -3px 2px rgba(0,0,0,0.02);
+}
+.write_txt{
+  background: url(../images/Icon-emoticon.png) no-repeat 5px center;
+  height: 50px;
+  background-size: auto 80%;
+  border: none;
+  padding: 5px 5px 5px 55px;
+  font-size: 92%;
+  color: #9b9b9b;
+  width: 66%;
+  font-weight: 300;
+  outline: none;
+}
+.write_msg button{
+  font-size: 92%;
+  color: #fff;
+  font-weight: bold;
+  max-width: 20%;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  background: #ddd;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  float: right;
+}
+.write_txt:focus + button, .write_msg button.active_btn {
+  background: #5d94bd;
+}
+
+@media screen and (max-width: 540px){
+  .seller_img{
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .seller_name {
+    display: block;
+    text-align: center;
+  }
+  .btn_sectn a{ 
+    height: 66px;
+    font-size: 80%;
+  }
+  .write_txt{
+    font-size: 64%;
+    width: 60%;
+  }
+  .seller_sectn .seller_msg, 
+  .user_sectn .user_msg {
+    font-size: 75%;
+  }
+  .write_msg button{
+    font-size: 83%;
+    color: #fff;
+    font-weight: bold;
+    max-width: 28%;
+  }
+@media screen and (max-width: 460px){
+  .btn_sectn a {
+    height: 50px;
+    font-size: 52%;
+    line-height: 50px;
+  }
+  .write_msg button {
+    font-size: 75%;
+    max-width: 30%;
+    height: 44px;
+  }
+  .write_txt{
+    font-size: 54%;
+    width: 56%;
+  }
+  .seller_sec p {
+    font-size: 67%;
+  }
+  .seller_sec p > span {
+    margin: 0 10px;
+  }
+  h4 {
+    font-size: 85%;
+  }
+  .details_section p {
+    font-size: 75%;
+    line-height: 30px
+  }
+}

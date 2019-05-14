@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Test Task</title>
+
+   <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- Fonts css -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+<body>
+
+	<!-- wrapper start -->
+	<div class="wrapper">
+
+		
+		<!-- Carousal slider start -->
+		<div class="carousal_section">
+			<div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/Top image 1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="images/Top image 2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="images/Top image 3.png" alt="">
+        </div>
+      </div>
+    </div><!-- Carousal slider end -->
+
+
+    <!-- Details section start -->
+    <div class="details_section">
+      <h4>Nice Adidass Sneakers</h4>
+      <p>
+        This shoe is cool and it is almost not used. I want to swop it
+        because Lorem Ipsum is simply dummy text of the printing 
+        and typesetting industry. Lorem Ipsum has been the 
+        industry's standard dummy text ever since the 1500s,
+      </p>
+      <div class="size_chart">
+        <h4>Size: 43</h4>
+      </div>
+    </div><!-- Details section end -->
+
+
+    <!-- About seller section start -->
+    <div class="about_selller_sectn">
+      <h4>About the Sellet:</h4>
+
+      <div class="seller_sec">
+        <div class="seller_img">
+          <img src="images/Icon - profile picture.png" alt="">
+        </div>
+        <div class="seller_name">
+          <h3>Jacob H.</h3>
+          <p>41 Years Old  <span>&#9679;</span> 2300 Copenhagen</p>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="btn_sectn">
+        <a class="more_from_seller_btn" href="https://www.google.com">More from Seller</a>
+        <a href="#" class="report_btn">Report</a>
+      </div>
+
+
+
+      <!-- Message box start -->
+      <div class="message_sectn">
+        <div class="user_sectn">
+          <span class="user_msg">I like Blue. Shall we be ShoeMates?</span>
+          <p>27.09.2018 / 11:43 am</p>
+        </div>
+        <div class="seller_sectn">
+          <span class="seller_msg">Good Idea :) My number is +45421451</span>
+          <p>27.09.2018 / 11:43 am</p>
+        </div>
+      </div>
+
+    </div><!-- About seller section end -->
+
+
+    <!-- Write message section start -->
+    <div class="write_msg">
+      <input type="text" class="write_txt" placeholder="Write message...">
+      <button type="submit">SEND</button>
+    </div><!-- Write message section end -->
+
+
+	</div><!-- wrapper end -->
+
+
+  
+
+<!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false,
+          loop: false,
+          margin: 20
+        }
+      }
+    })
+  })
+
+  $(".write_msg input").blur(function(){
+    if($(this).val() !== ""){
+      $(this).next("button").addClass("active_btn");
+    }
+  });
+
+</script>
+
+</body>
+</html>
